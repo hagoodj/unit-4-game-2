@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RPG Game</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Added a link to our external stylesheet-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+
+<!-- Jumbotron for Title -->
+<div class="jumbotron">
+    <h1 class="text-center">RPG</h1>
+    <h2 class="text-center"></h2>
+    <h4 class="text-center"></h4>
+    <h4 class="text-center"></h4>
+    <h4 class="text-center"></h4>
+    <h4 class="text-center"></h4>
+    <h4 class="text-center"></h4>
+    <br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- <button id="button-start" class="btn btn-success" value="start"><span>Start</span></button> -->
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <h3 class="card-header">Pick Your Player</h3>
+            <div class="card-body">
+                <div class= "row justify-content-md-center">
+                    <button id="button-1" class="btn number players" value="player1"><span><img src = "./assets/images/player1.JPG" width = "100px" height = "100px"></span></button>
+                    <button id="button-2" class="btn number players" value="player2"><span><img src = "./assets/images/player2.JPG" width = "100px" height = "100px"></span></button>
+                    <button id="button-3" class="btn number players" value="player3"><span><img src = "./assets/images/player3.JPG" width = "100px" height = "100px"></span></button>
+                    <button id="button-4" class="btn number players" value="player4"><span><img src = "./assets/images/player4.JPG" width = "100px" height = "100px"></span></button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "row">
+        <div class="col-lg-4">
+            <div class="card">
+                <h3 class="card-header">Your Player</h3>
+                  <div class="card-body">
+                    <div class="row justify-content-center">
+                      <span id = "chosen-player"></span>
+                    </div>
+                      <div class = "row justify-content-center">
+                        <h4 id = "your-hp"></h4>
+                      </div>
+                      <div class = "row justify-content-center">
+                        <h4 id = "attack-power"></h4>
+                      </div>
+                      <div class = "row justify-content-center">
+                        <button id="button-attack" class="btn btn-success" value="attack"><span>Attack</span></button>
+                      </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card">
+                <h3 class="card-header">Enemy</h3>
+                  <div class="card-body">
+                    <div class = "row justify-content-center">
+                      <span id = "chosen-enemy"></span>
+                    </div>
+                    <div>
+                      <div class = "row justify-content-center">
+                        <h4 id = "enemy-hp"></h4>
+                      </div>
+                      <div class = "row justify-content-center">
+                        <h4 id = "counter-attack-power"></h4>
+                      </div>
+                    </div>                    
+                  </div>
+            </div>
+        </div>
+        
+        <div class = "col-lg-4">
+            <div class="card">
+                <h3 class="card-header">Choose an Enemy</h3>
+                  <div class="card-body">
+                    <div class = "row justify-content-center">
+                      <button id="button-5" class="btn number enemies" value="enemy1"><span id="enemy1img"></span></button>
+                    </div>
+                    <div class = "row justify-content-center">
+                      <button id="button-6" class="btn number enemies" value="enemy2"><span id="enemy2img"></span></button>
+                    </div>
+                    <div class = "row justify-content-center">
+                      <button id="button-7" class="btn number enemies" value="enemy3"><span id="enemy3img"></span></button>
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </div>
+
+
+      </div>
+
+      <script src="./assets/javascript/game.js"></script>
+
+      </div>
+  
+  </div>
+
+</body>
+</html>
